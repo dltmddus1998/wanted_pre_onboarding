@@ -32,18 +32,18 @@
 
 - 회사 - Corporation
     
-    필드명 - **회사id(corp_id) - pk**, 회사명(corp_name), 국가(country), 지역(region)
+    필드명 - **회사id(id) - pk**, 회사명(corp_name), 국가(country), 지역(region)
     
 - 사용자 - User
     
-    필드명 - **사용자id(user_id) - pk**, 사용자이름(user_name), 
+    필드명 - **사용자id(user_id) - pk**, 사용자이름(user_name), 이메일(email)
     
 - 채용 공고 - Notice
     
     필드명 - **공고id(notice_id) - pk**, **회사id(corp_id) - fk**, 채용포지션(recruit_pos), 채용보상금(recruit_pay), 채용내용(recruit_content), 사용기술(tech)
     
 
-<img src="https://user-images.githubusercontent.com/73332608/173312976-08185d4d-6fa8-463e-bb4a-b0b5f391acc1.png" width="600" height="540">
+<img src="https://user-images.githubusercontent.com/73332608/173386224-5870c5dd-72a5-4bff-acd2-db94486e7f92.png" width="600" height="540">
 
 <br>
 <br>
