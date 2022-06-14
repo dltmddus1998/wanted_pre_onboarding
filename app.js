@@ -27,6 +27,4 @@ app.use((error, req, res, next) => {
 sequelize.sync().then(() => {
     app.listen(config.host.port);
     console.log(`🚀 Server Started!!: ${config.host.port}`);
-})
-
-
+});
