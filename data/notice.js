@@ -32,7 +32,25 @@ export const Notice = sequelize.define(
     { timestamps: false },  
 );
 
-Notice.belongsTo(Corporation,{
+Corporation.hasMany(Notice, {
     foreignKey: 'corp_id',
-    allowNull: false
+    onDelete: 'cascade',
 });
+
+Notice.belongsTo(Corporation, {
+    foreignKey: 'corp_id',
+    onDelete: 'cascade',
+});
+
+Notice.sync()
+    .then(() => {
+        Notice.findAndCountAll({
+            where: {}
+        }).then(fields => {
+            if (fields.count > 0) {
+                Notice.destroy({
+                    where: {},
+                });
+            }
+        });
+    });
