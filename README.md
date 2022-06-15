@@ -43,7 +43,7 @@
     필드명 - **공고id(notice_id) - pk**, **회사id(corp_id) - fk**, 채용포지션(recruit_pos), 채용보상금(recruit_pay), 채용내용(recruit_content), 사용기술(tech)
     
 
-<img src="https://user-images.githubusercontent.com/73332608/173386224-5870c5dd-72a5-4bff-acd2-db94486e7f92.png" width="600" height="540">
+<img src="https://user-images.githubusercontent.com/73332608/173386224-5870c5dd-72a5-4bff-acd2-db94486e7f92.png" width="700" height="540">
 
 <br>
 <br>
