@@ -5,6 +5,9 @@ import helmet from 'helmet';
 import { sequelize } from './db/database.js';
 import { config } from './config.js';
 import recruitRouter from './router/recruit_notice.js';
+import { RecruitController } from './controller/recruit.js';
+import * as noticeRepository from './data/notice.js';
+
 
 const app = express();
 
@@ -13,7 +16,7 @@ app.use(helmet());
 app.use(cors());
 app.use(morgan('tiny'));
 
-app.use('/recruit', recruitRouter);
+app.use('/recruit', recruitRouter(new RecruitController(noticeRepository)));
 
 app.use((req, res, next) => {
     res.sendStatus(404);
