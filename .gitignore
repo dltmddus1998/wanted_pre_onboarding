@@ -4,8 +4,6 @@
 /node_modules
 /config
 
-.env
-.env.test
 localhost*
 
 *package-lock.json
