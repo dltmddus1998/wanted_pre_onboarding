@@ -25,20 +25,22 @@ export class RecruitController {
     
         if (detail) {
             // notice_id=1인 corp_id를 추출
+            console.log(detail.dataValues);
             const { corp_id } = detail.dataValues;
-    
             // 이후 Corporation에서 corp_id에 해당하는 corp_name추출해서 결과에 포함하기
             const corpInfo = await this.notices.getCorpById(corp_id);
             
             // 기업명이 나오니 기업id는 제외
             delete detail.dataValues.corp_id;
             delete corpInfo.dataValues.id;
+
+            const result1 = detail.dataValues;
+            const result2 = corpInfo.dataValues;
     
-            const result = detail.dataValues;
+            const resultDetail = await this.notices.getDetail(result1, result2);
             
             return res.status(200).json({
-                ...result,
-                ...corpInfo.dataValues
+                ...resultDetail
             });
         }
         return res.status(404).json({ message: `Notice Id(${notice_id}) is not found!!` });
