@@ -58,15 +58,20 @@
 
 <br>
 <br>
+    
+    
 ### 기술 스택
 
-JavaScript
+![image](https://img.shields.io/badge/FRONT-JavaScript-%23F7DF1E?style=for-the-badge&logo=JavaScript)
+    
+![image](https://img.shields.io/badge/BACK-Node.js-%23339933?style=for-the-badge&logo=Node.js)
+    
+![image](https://img.shields.io/badge/BACK-EXPRESS-%23000000?style=for-the-badge&logo=Express)
 
-MySQL
+![image](https://img.shields.io/badge/BACK-Sequelize-%2352B0E7?style=for-the-badge&logo=Sequelize)
 
-Sequelize 
-
-Express
+![image](https://img.shields.io/badge/BACK-MySQL-%234479A1?style=for-the-badge&logo=MySQL)
+    
 
 ### 개발 시작
 
@@ -510,7 +515,7 @@ export class RecruitController {
 ```
 
 - [ ]  Advanced
-    - [x]  채용공고 검색하기
+    - [ ]  채용공고 검색하기
     - [x]  Unit Test
     - [ ]  사용자 채용공고 지원
     - [ ]  채용 상세 페이지 조회에서 해당 회사 다른 채용공고 포함
@@ -729,4 +734,5 @@ describe('RecruitController', () => {
 
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d7029ccd-e02c-43a3-aa75-9cd40d0f2c74/Untitled.png)
+![image](https://user-images.githubusercontent.com/73332608/174487125-5d32440f-1d7f-47cc-b960-cd1599dc6156.png)
+
