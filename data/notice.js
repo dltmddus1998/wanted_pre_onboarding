@@ -78,6 +78,13 @@ export async function getCorpById(corp_id) {
     });
 }
 
+export async function getDetail(result1, result2) {
+    return {
+        ...result1,
+        ...result2
+    };
+}
+
 export async function getAll() {
     return Notice.findAll({ ...INCLUDE_CORP });
 }
