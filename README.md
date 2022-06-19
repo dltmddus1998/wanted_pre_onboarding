@@ -1,9 +1,7 @@
 # wanted_pre_onboarding
 
-<br>
-<br>
-<br>
-
+## ‼️ 주의사항
+해당 코드를 클론해서 사용하기 전 npm install을 통해 package를 설치해주고, .env와 .env.test 파일로가 본인의 MySQL 유저명과 비밀번호를 입력하면 됩니다.
 
 ## 🚨 요구사항
 
