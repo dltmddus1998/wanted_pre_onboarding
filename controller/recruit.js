@@ -58,8 +58,10 @@ export class RecruitController {
     modifyRecruitNotice = async (req, res) => {
         const { notice_id } = req.params;
         const { recruit_pos, recruit_pay, recruit_content, tech } = req.body;
+
+        const result = await this.notices.getNoticeById(notice_id);
     
-        if (!notice_id) {
+        if (!result) {
             return res.status(404).json({ message: "Notice is not found!" });
         }
         const modified = {
